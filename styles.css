@@ -112,7 +112,7 @@ body {
     right: 0;
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px; /* Reduced gap to fit better on mobile */
     z-index: 3;
 }
 
@@ -228,20 +228,17 @@ body {
         left: 0;
         right: 0;
         justify-content: space-around;
+        gap: 10px; /* Further reduce gap between navbar items */
     }
 
     .navbar a {
         font-size: 1rem;
+        padding: 5px 10px; /* Adjust padding for mobile */
     }
 
     /* Button Resize */
     .events-button {
         font-size: 1rem;
-    }
-
-    /* Adjust the "Home" and "Contact Us" bars to not get cut off */
-    .navbar a {
-        padding: 5px 10px; /* Adjust padding for mobile */
     }
 }
 
@@ -289,13 +286,13 @@ body {
 .about-us-content {
     display: flex;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px; /* Reduced gap for better visibility */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .about-us-image {
-    max-width: 550px;
+    max-width: 450px; /* Shrinking image size for better layout */
     width: 100%;
     height: auto;
     border: 2px solid #ccc;
@@ -306,15 +303,16 @@ body {
 .about-us-title {
     font-family: "Anton", sans-serif;
     color: #11273A; /* Navy Blue */
-    font-size: 5rem;
-    margin-top: 100px; /* Added margin to move the text down */
+    font-size: 3rem; /* Reduced size */
+    margin-top: 20px; /* Adjusted margin */
 }
 
 .about-us-description {
     font-family: "Quicksand", sans-serif;
     color: #333333;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
+    margin-top: 20px; /* Added margin */
 }
 
 /* OUR EVENTS Title Adjustment */
