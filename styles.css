@@ -13,8 +13,8 @@
 body {
     height: 100%;
     overflow-x: hidden;
-    color: black; /* Change text color to black to match the light background */
-    background-color: #E1DFD9; /* Set background color to #E1DFD9 */
+    color: black;
+    background-color: #E1DFD9;
 }
 
 /* Fullscreen Background Image */
@@ -32,7 +32,7 @@ body {
     width: 100vw;
     background-attachment: fixed;
     position: relative;
-    overflow: hidden; /* Prevent any overflow */
+    overflow: hidden;
 }
 
 .background3 {
@@ -41,7 +41,7 @@ body {
     width: 100vw;
     background-attachment: fixed;
     position: relative;
-    overflow: hidden; /* Prevent any overflow */
+    overflow: hidden;
 }
 
 /* Title Styling */
@@ -57,10 +57,10 @@ body {
     z-index: 2;
 }
 
-/* Events Button Styling (White Border) */
+/* Events Button Styling */
 .events-button {
     position: absolute;
-    top: 55%;
+    top: 60%; /* Adjusted to move button below title */
     left: 50%;
     transform: translate(-50%, -50%);
     background: transparent;
@@ -68,24 +68,23 @@ body {
     font-size: 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
-    border: 2px solid white; /* White border */
+    border: 2px solid white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Only scale the button */
-    display: inline-block; /* Ensures the text remains centered */
+    transition: transform 0.3s ease;
+    display: inline-block;
     z-index: 2;
 }
 
-/* Button Hover Effects */
 .events-button:hover {
-    transform: translate(-50%, -50%) scale(1.1); /* Keep the button centered during scaling */
+    transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
     color: white;
     background: transparent;
 }
 
-/* Underline Animation (Same as Navbar) */
+/* Underline Animation */
 .events-button::after {
     content: '';
     position: absolute;
@@ -104,6 +103,7 @@ body {
 .event-info {
     font-family: "Quicksand", serif;
 }
+
 /* Navigation Bar Styling */
 .navbar {
     position: absolute;
@@ -130,7 +130,6 @@ body {
     text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
 }
 
-/* Underline Animation */
 .navbar a::after {
     content: '';
     position: absolute;
@@ -146,68 +145,34 @@ body {
     width: 100%;
 }
 
-/* Black Banner Style */
-.black-banner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0px;
-    background-color: #E1DFD9;
-    z-index: 4;
-}
-
 /* Content Styling */
 .content {
     position: relative;
     padding: 20px;
     color: white;
     z-index: -1;
-    margin-top: 0; /* Remove margin-top */
+    margin-top: 0;
 }
 
-/* Bottom Black Banner */
-.bottom-black-banner {
-    width: 150%;
-    height: 200px; /* Height of the banner at the bottom */
-    background-color: #E1DFD9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Add Text to the Bottom Black Banner */
-.banner-text {
-    font-family: "Anton", serif;
-    font-weight: 500;
-    color: #11273A;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    position: relative;
-    bottom: 40px;
-    right: 820px;
-}
-/* Adjust Image Row and Containers */
+/* Image Row */
 .image-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    padding: 0 70px;
     gap: 30px;
-    /* Adjust this value to move the images up or down */
-    margin-top: -70px; /* You can change this value to move images up/down */
+    margin-top: 20px; /* Adjusted to avoid overlap with bar image */
+    padding: 0 70px;
 }
 
 .image-container {
-    text-align: left; /* Align text to the left */
-    flex: 1; /* Make sure images are evenly spaced */
+    text-align: left;
+    flex: 1;
 }
 
 .image-row img {
-    width: 100%; /* Make all images fill the container */
+    width: 100%;
+    max-width: 350px;
     height: auto;
-    max-width: 350px; /* Set a max width for all images */
     border: 2px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
@@ -220,9 +185,7 @@ body {
 .image-container h3 {
     font-size: 1.5rem;
     font-family: "Anton", serif;
-    font-weight: 10;
     color: black;
-    margin-top: 10px;
 }
 
 .image-container p {
@@ -232,6 +195,7 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    /* Image Row */
     .image-row {
         flex-direction: column;
         align-items: center;
@@ -249,6 +213,27 @@ body {
     .image-container p {
         font-size: 0.9rem;
     }
+
+    /* Adjust Title */
+    .title {
+        font-size: 3rem;
+    }
+
+    /* Adjust Navbar */
+    .navbar {
+        flex-direction: column;
+        top: 10px;
+        right: 10px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    /* Button Resize */
+    .events-button {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -259,7 +244,7 @@ body {
     }
 
     .image-row img {
-        max-width: 350px; /* Limit the max width to ensure uniformity */
+        max-width: 350px;
     }
 
     .image-container h3 {
@@ -269,9 +254,14 @@ body {
     .image-container p {
         font-size: 1rem;
     }
+
+    /* Adjust Title */
+    .title {
+        font-size: 4rem;
+    }
 }
 
-/* About Us Section Styling */
+/* About Us Section */
 .content-section {
     display: flex;
     align-items: center;
@@ -280,8 +270,8 @@ body {
 }
 
 .about-us-section {
-    background-color: #E1DFD9; /* Match the gray background */
-    padding: 20px 20px; /* Reduce padding to move everything up */
+    background-color: #E1DFD9;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,44 +279,54 @@ body {
 
 .about-us-content {
     display: flex;
-    align-items: flex-start; /* Adjust alignment */
+    align-items: flex-start;
     gap: 30px;
     max-width: 1200px;
-    margin: -100px auto 0 auto; /* Move content upwards with negative margin */
+    margin: 0 auto;
 }
+
 .about-us-image {
     max-width: 550px;
     width: 100%;
     height: auto;
     border: 2px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    margin-top: -200px;
+    margin-top: 20px; /* Adjusted */
 }
 
 .about-us-title {
     font-family: "Anton", sans-serif;
-    color: #11273A; /* Navy color */
+    color: #11273A; /* Navy Blue */
     font-size: 5rem;
-    margin-bottom: 20px; /* Adjust spacing below the heading */
+    margin-top: 100px; /* Added margin to move the text down */
 }
+
 .about-us-description {
     font-family: "Quicksand", sans-serif;
     color: #333333;
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-top: 0; /* Ensure no extra margin above */
 }
 
-
-/* Make the page longer and allow scrolling */
-.body-long {
-    height: 150vh; /* Increases the height of the page to 1.5 times the viewport height */
-    background-color: #E1DFD9; /* Keep the background black */
+/* OUR EVENTS Title Adjustment */
+.our-events-title {
+    font-family: "Anton", sans-serif;
+    color: #11273A; /* Navy Blue */
+    font-size: 3rem;
+    position: relative;
+    top: -40px; /* Adjusted for positioning */
+    left: 50%; /* Align to the left of the first image */
+    transform: translateX(-50%); /* Adjust the alignment */
+    margin-bottom: 20px; /* Add margin to move it up slightly */
 }
-
-/* Optional: Additional space at the bottom to enhance the scrolling effect */
+.banner-text {
+    font-family: "Anton", sans-serif;
+    color: #11273A; /* Navy Blue */
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-left: 70px; /* Adjust this value to move it right */
+}
 .footer-space {
-    height: 100px; /* Add extra height for scrolling */
-    background-color: #E1DFD9; /* Ensure the space at the bottom remains black */
-}
+        height: 100px; /* Adjust this to add more or less black space at the bottom */
+        background-color: #E1DFD9; /* Black color */
+    }
