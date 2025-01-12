@@ -199,7 +199,7 @@ body {
 @media (max-width: 768px) {
     /* Title Styling */
     .title {
-        font-size: 2.5rem; /* Smaller title size on mobile */
+        font-size: 2.2rem; /* Shrink title further on mobile */
     }
 
     /* Adjust Image Row */
@@ -210,7 +210,8 @@ body {
     }
 
     .image-row img {
-        max-width: 80%;
+        max-width: 70%;
+        height: auto; /* Shrink image size further */
     }
 
     .image-container h3 {
@@ -236,6 +237,11 @@ body {
     /* Button Resize */
     .events-button {
         font-size: 1rem;
+    }
+
+    /* Adjust the "Home" and "Contact Us" bars to not get cut off */
+    .navbar a {
+        padding: 5px 10px; /* Adjust padding for mobile */
     }
 }
 
