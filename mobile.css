@@ -2,21 +2,21 @@
 @media (max-width: 1200px) {
     /* Adjust the navbar for mobile */
     .navbar {
-        display: flex; /* Flexbox to align items in a row */
+        display: flex; /* Use flexbox for horizontal alignment */
         flex-direction: row; /* Align items horizontally */
-        justify-content: flex-start; /* Align items to the left */
-        gap: 10px; /* Space between navbar items */
-        padding: 10px 0; /* Padding for spacing */
-        width: 100%; /* Full width of the screen */
+        justify-content: space-between; /* Space items evenly */
+        gap: 10px; /* Adjust the gap between the navbar items */
+        padding: 8px 0; /* Add padding to the navbar */
+        width: 95%; /* Ensure the navbar takes full width */
         overflow-x: auto; /* Allow horizontal scrolling if needed */
-        white-space: nowrap; /* Prevent items from wrapping */
+        white-space: nowrap; /* Prevent the navbar items from wrapping */
     }
 
     .navbar a {
-        font-size: 0.8rem; /* Adjust font size */
-        padding: 6px 12px; /* Adjust padding for better spacing */
+        font-size: 0.6rem; /* Adjust font size */
+        padding: 2px 4px; /* Add padding for comfortable button spacing */
         white-space: nowrap; /* Prevent text from wrapping */
-        display: inline-block; /* Ensure the links align horizontally */
+        display: inline-block; /* Ensure items stay in one line */
     }
 
     /* Adjust the title */
@@ -24,7 +24,7 @@
         font-size: 2rem;
     }
 
-    /* Adjust event button */
+    /* Adjust the event button */
     .events-button {
         font-size: 1rem;
         padding: 7px 14px; /* Adjust padding */
@@ -46,6 +46,6 @@
     }
 
     .image-container img {
-        max-width: 100%; /* Ensure images fit screen width */
+        max-width: 100%; /* Ensure images fit within the screen */
     }
 }
