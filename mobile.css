@@ -6,7 +6,7 @@
         display: flex; /* Flexbox to align items in a row */
         flex-direction: row; /* Ensure the items are in a horizontal line */
         justify-content: flex-start; /* Align the items to the left */
-        gap: 10px; /* Provide spacing between items */
+        gap: 5px; /* Reduced gap between items */
         padding: 10px 0; /* Padding for overall spacing */
         width: 100%; /* Full width of the screen */
         flex-wrap: nowrap; /* Ensure no wrapping */
@@ -15,10 +15,10 @@
 
     .navbar a {
         font-size: 0.8rem; /* Adjust font size */
-        padding: 5px 10px; /* Adjust padding */
+        padding: 4px 8px; /* Adjust padding to be more compact */
         white-space: nowrap; /* Prevent text from wrapping */
         display: inline-block; /* Ensure each link behaves inline */
-        min-width: 80px; /* Minimum width to ensure no cutting off */
+        min-width: 70px; /* Minimum width to ensure no cutting off */
         text-align: center; /* Center-align text inside links */
     }
 
@@ -30,7 +30,7 @@
     /* Adjust event button */
     .events-button {
         font-size: 1rem;
-        padding: 8px 16px;
+        padding: 7px 14px; /* Adjust padding to make it more compact */
     }
 
     /* Adjust image row */
