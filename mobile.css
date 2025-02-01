@@ -6,14 +6,14 @@
         display: flex;
         flex-wrap: wrap; /* Ensure navbar items wrap onto a new line if needed */
         justify-content: space-evenly; /* Spread navbar items evenly across the width */
-        gap: 10px; /* Adjust gap for spacing between items */
-        padding: 10px 0; /* Add padding for spacing */
+        gap: 8px; /* Adjust gap for spacing between items */
+        padding: 6px 0; /* Add padding for spacing */
     }
 
     .navbar a {
-        font-size: 0.9rem; /* Increase font size for readability */
+        font-size: 0.5rem; /* Increase font size for readability */
         padding: 8px 16px; /* Adjust padding to make it easier to tap */
-        min-width: 100px; /* Ensure items have a minimum width to prevent clipping */
+        min-width: 80px; /* Ensure items have a minimum width to prevent clipping */
         text-align: center; /* Center the text inside the navbar items */
     }
 
