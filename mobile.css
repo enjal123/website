@@ -1,26 +1,22 @@
 /* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
 
-    /* Adjust layout for mobile devices */
-    .background, .background2, .background3 {
-        background-attachment: scroll; /* Disable fixed background */
+    /* Adjust the navbar for mobile */
+    .navbar {
+        flex-direction: row; /* Align items horizontally */
+        justify-content: space-around; /* Spread items evenly */
+        gap: 5px; /* Adjust gap to make navbar more compact */
+        padding: 10px 0; /* Add padding for spacing */
+    }
+
+    .navbar a {
+        font-size: 0.7rem; /* Shrink font size for mobile */
+        padding: 4px 8px; /* Adjust padding for smaller buttons */
     }
 
     /* Adjust the title */
     .title {
         font-size: 2rem;
-    }
-
-    /* Adjust the navbar for mobile */
-    .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
-        align-items: center; /* Center-align navbar items */
-        padding: 10px 0; /* Add padding for spacing */
-    }
-
-    .navbar a {
-        font-size: 0.8rem; /* Shrink font size for mobile */
-        padding: 6px 12px; /* Adjust padding for smaller buttons */
     }
 
     /* Adjust event button */
