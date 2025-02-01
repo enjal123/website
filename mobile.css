@@ -5,13 +5,13 @@
     .navbar {
         flex-direction: row; /* Align items horizontally */
         justify-content: space-around; /* Spread items evenly */
-        gap: 4px; /* Adjust gap to make navbar more compact */
-        padding: 9px 0; /* Add padding for spacing */
+        gap: 10px; /* Adjust gap for better spacing between items */
+        padding: 10px 0; /* Add padding for spacing */
     }
 
     .navbar a {
-        font-size: 0.50rem; /* Shrink font size slightly more */
-        padding: 2px 6px; /* Slightly reduced padding for a more compact look */
+        font-size: 0.8rem; /* Increase font size a bit */
+        padding: 5px 10px; /* Adjust padding to make it more comfortable */
     }
 
     /* Adjust the title */
@@ -22,7 +22,7 @@
     /* Adjust event button */
     .events-button {
         font-size: 1rem;
-        padding: 7px 15px;
+        padding: 8px 16px;
     }
 
     /* Adjust image row */
