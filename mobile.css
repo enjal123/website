@@ -1,21 +1,20 @@
 /* Responsive adjustments for smaller screens */
 @media (max-width: 1200px) {
 
-    /* Adjust the navbar for mobile */
+    /* Ensure the navbar is horizontal and all buttons stay in one row */
     .navbar {
-        display: flex; /* Ensure it's using flexbox */
+        display: flex; /* Use flexbox for horizontal layout */
         flex-direction: row; /* Align items horizontally */
-        justify-content: space-between; /* Evenly space the items */
-        gap: 10px; /* Adjust gap for better spacing between items */
-        padding: 10px 0; /* Add padding for spacing */
-        flex-wrap: wrap; /* Ensure it wraps correctly if needed */
-        width: 100%; /* Ensure the navbar takes full width */
+        justify-content: flex-start; /* Align items to the left */
+        gap: 10px; /* Space out the navbar links slightly */
+        padding: 10px 0; /* Add some padding for spacing */
+        width: 100%; /* Full width of the screen */
     }
 
     .navbar a {
-        font-size: 0.8rem; /* Adjust font size for smaller screens */
-        padding: 5px 10px; /* Adjust padding for better spacing */
-        white-space: nowrap; /* Prevent text from wrapping */
+        font-size: 0.8rem; /* Adjust the font size for smaller screens */
+        padding: 5px 15px; /* Adjust padding for better spacing */
+        white-space: nowrap; /* Ensure text doesn't wrap */
     }
 
     /* Adjust the title */
