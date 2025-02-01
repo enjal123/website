@@ -10,8 +10,8 @@
     }
 
     .navbar a {
-        font-size: 0.7rem; /* Shrink font size for mobile */
-        padding: 4px 8px; /* Adjust padding for smaller buttons */
+        font-size: 0.65rem; /* Shrink font size slightly more */
+        padding: 3px 7px; /* Slightly reduced padding for a more compact look */
     }
 
     /* Adjust the title */
