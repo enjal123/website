@@ -1,22 +1,25 @@
 /* Responsive adjustments for smaller screens */
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
 
     /* Adjust the navbar for mobile */
     .navbar {
-        flex-direction: row; /* Align items horizontally */
-        justify-content: space-around; /* Spread items evenly */
-        gap: 10px; /* Adjust gap for better spacing between items */
+        display: flex;
+        flex-wrap: wrap; /* Ensure navbar items wrap onto a new line if needed */
+        justify-content: space-evenly; /* Spread navbar items evenly across the width */
+        gap: 10px; /* Adjust gap for spacing between items */
         padding: 10px 0; /* Add padding for spacing */
     }
 
     .navbar a {
-        font-size: 0.8rem; /* Increase font size a bit */
-        padding: 5px 10px; /* Adjust padding to make it more comfortable */
+        font-size: 0.9rem; /* Increase font size for readability */
+        padding: 8px 16px; /* Adjust padding to make it easier to tap */
+        min-width: 100px; /* Ensure items have a minimum width to prevent clipping */
+        text-align: center; /* Center the text inside the navbar items */
     }
 
     /* Adjust the title */
     .title {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Decrease title size a little for better fitting */
     }
 
     /* Adjust event button */
