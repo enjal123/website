@@ -10,13 +10,16 @@
         padding: 10px 0; /* Padding for overall spacing */
         width: 100%; /* Full width of the screen */
         flex-wrap: nowrap; /* Ensure no wrapping */
+        overflow-x: auto; /* Allow horizontal scrolling if necessary */
     }
 
     .navbar a {
         font-size: 0.8rem; /* Adjust font size */
-        padding: 5px 15px; /* Adjust padding */
+        padding: 5px 10px; /* Adjust padding */
         white-space: nowrap; /* Prevent text from wrapping */
-        display: block; /* Ensure each link behaves as a block in flexbox */
+        display: inline-block; /* Ensure each link behaves inline */
+        min-width: 80px; /* Minimum width to ensure no cutting off */
+        text-align: center; /* Center-align text inside links */
     }
 
     /* Adjust the title */
